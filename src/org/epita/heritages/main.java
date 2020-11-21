@@ -6,6 +6,7 @@ public class main {
         PetitEnfant petitOlivier = new PetitEnfant("MARTN","Jeannette");
         Enfant jean = petitOlivier;
 
+//        ajout commentaire pour Git à 14:06
         System.out.println(olivier.petitNom+" "+olivier.getClass());
         System.out.println(petitOlivier.petitNom);
         System.out.println(jean.petitNom+" "+jean.getClass());
