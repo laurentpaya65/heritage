@@ -7,7 +7,7 @@ public class main {
         Enfant jean = petitOlivier;
 
 //        commentaire depuis heritage2 à 14:08
-        System.out.println(olivier.petitNom+" "+olivier.getClass());
+//        System.out.println(olivier.petitNom+" "+olivier.getClass());
         System.out.println(petitOlivier.petitNom);
         System.out.println(jean.petitNom+" "+jean.getClass());
         System.out.println(jean == petitOlivier);
