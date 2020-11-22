@@ -9,12 +9,12 @@ public class main {
         train.direBonjour();
         System.out.println(train.getClass());
 
-        Vehicule vehicule = new Vehicule(4);
-        Vehicule vehicule1  = new Vehicule(5);
-        System.out.println(vehicule.toString().equals(vehicule1.toString()));
+        System.out.println("test equals");
+        Vehicule vehicule = new Vehicule(3,"tricycle");
+        Velo velo1 = new Velo(3,"tricycle");
 
-        String[] s1 ={"A","B"};
-        String s = "A";
-        System.out.println("String= "+ (s1[0]==s)+" ou "+s1[0].equals(s));
+        System.out.println(vehicule.equals(velo1));
+
+        System.out.println(velo1);
     }
 }
