@@ -11,6 +11,9 @@ public class main {
         System.out.println(petitOlivier.petitNom);
         System.out.println(jean.petitNom+" "+jean.getClass());
         System.out.println(jean == petitOlivier);
+        System.out.printf("petitolivier HashCode="+petitOlivier.hashCode());
+        System.out.printf("jean HashCode="+jean.hashCode());
+        System.out.println(jean.equals(petitOlivier));
 
         System.out.println(olivier.getPetitNom());
         System.out.println(petitOlivier.getPetitNom());
