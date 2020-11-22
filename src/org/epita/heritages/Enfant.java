@@ -1,6 +1,8 @@
 package org.epita.heritages;
 
-public class Enfant {
+import java.util.Objects;
+
+public class Enfant implements Cloneable {
     private String nom;
     private String prenom;
     private int age;
@@ -9,6 +11,28 @@ public class Enfant {
 
     public String getPetitNom() {
         return petitNom;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Enfant enfant = (Enfant) o;
+        return age == enfant.age &&
+                Objects.equals(nom, enfant.nom) &&
+                Objects.equals(prenom, enfant.prenom) &&
+                Objects.equals(amoureux, enfant.amoureux) &&
+                Objects.equals(petitNom, enfant.petitNom);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nom, prenom, age, amoureux, petitNom);
     }
 
     public Enfant(String nom, String prenom) {
